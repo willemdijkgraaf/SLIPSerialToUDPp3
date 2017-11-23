@@ -309,7 +309,7 @@ UDP udp;
 
 int inPort = 9000;
 int outPort = 10001;
-String ipAddress = "192.168.0.110";
+String ipAddress = "127.0.0.1";
 
 void setupUDP() {
   udp = new UDP( this, inPort );
@@ -338,7 +338,7 @@ void UDPSendBuffer(byte[] data) {
 
 void setup() {
   // configure the screen size and frame rate
-  size(550, 250, P3D);
+  size(550, 400, P3D);
   frameRate(30);
   setupGUI();
 }
